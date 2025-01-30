@@ -30,13 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
     feedbackDiv.style.display = "block";
 
     if (isValid) {
-      const successMessage = "Registration succesfull";
-      feedbackDiv.innerHTML = succesMessage;
-      feedbackDiv.innerHTML = successMessage;
+      feedbackDiv.textContent = "Registration succesfull";
       feedbackDiv.style.color = "#28a745";
     } else {
-      const errorMessage = messages.join("");
-      feedbackDiv.innerHTML = errorMessage;
+      feedbackDiv.innerHTML = messages.join("");
       feedbackDiv.style.color = "#dc3545";
     }
   });
